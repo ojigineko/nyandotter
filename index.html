@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドット絵変換ツール『にゃんドッター』</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ドット絵変換ツール『にゃんドッター』</h1>
+        
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="convertBtn">変換</button>
+        </div>
+        
+        <div class="settings-section">
+            <div class="setting">
+                <label for="pixelSize">ピクセルサイズ:</label>
+                <input type="range" id="pixelSize" min="2" max="20" value="8">
+                <span id="pixelSizeValue">8px</span>
+            </div>
+            <div class="setting">
+                <label for="colorReduction">色数削減:</label>
+                <input type="range" id="colorReduction" min="2" max="64" value="16">
+                <span id="colorReductionValue">16色</span>
+            </div>
+        </div>
+        
+        <div class="preview-section">
+            <div class="preview-container">
+                <h3>元の画像</h3>
+                <canvas id="originalCanvas"></canvas>
+            </div>
+            <div class="preview-container">
+                <h3>ドット絵</h3>
+                <canvas id="pixelatedCanvas"></canvas>
+            </div>
+        </div>
+        
+        <div class="download-section">
+            <button id="downloadBtn" disabled>ダウンロード</button>
+        </div>
+        
+        <div id="log-container">
+            <h3>ログ</h3>
+            <div id="log-content"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
