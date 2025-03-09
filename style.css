@@ -118,6 +118,57 @@ canvas {
     margin-bottom: 30px;
 }
 
+/* 使い方ガイドのスタイル */
+.usage-guide {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.usage-guide h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.usage-guide ol {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.usage-guide li {
+    margin-bottom: 10px;
+}
+
+.usage-guide ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.usage-guide ul li {
+    margin-bottom: 5px;
+}
+
+.tips {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px dashed #bdc3c7;
+    margin-top: 15px;
+}
+
+.tips h3 {
+    color: #e67e22;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.tips ul {
+    list-style-type: disc;
+}
+
 #log-container {
     margin-top: 30px;
     padding: 15px;
